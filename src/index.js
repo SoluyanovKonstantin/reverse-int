@@ -1,4 +1,3 @@
 module.exports = function reverse (n) {
-    n = n > 0 ? n : n*(-1);
-    return Number(String(n).split('').reverse().join(''));
+    return n > 0 ? Number(String(n).split('').reverse().join('')) : Number(String(-n).split('').reverse().join(''));
 }
